@@ -1,0 +1,58 @@
+site_name: My Docs
+# Project information
+site_name: XMLC Web 
+site_url: https://xmlc2024.github.io/newxmlcweb/
+site_author: XMLC
+site_description: >-
+  欢迎来到这里，这里面有一些小文档
+
+# Repository
+repo_name: XMLC New Web
+repo_url: https://github.com/XMLC2024/newxmlcweb
+
+# Copyright
+copyright: Copyright &copy; ZHAYU XMLC
+theme:
+  name: material
+  language: zh
+  features:
+    - content.tabs.link
+    - header.autohide
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 黑暗 の 鱼
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 明亮 の 鱼
+plugins:
+  - search:
+      lang: zh
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+nav:
+  - 开始: index.md
+  - 代理: 
+    - 前言 : vpn/index.md
+    - PaladinVPN: vpn/Paladinvpn.md
+  - 网络:
+    - You-get: internet/youget.md
